@@ -3,9 +3,17 @@
 
 
 {% block content %}
+<h1> Todo List </h1>
+
 
 {% for todo in todos %}
-    {{todo.title}}
+<div>
+    <a href="" style="text-decoration: none;"> 
+        <h3> {{todo.title}}</h3> 
+        
+    </a>
+    <small> {{todo.status}} </small><hr>
+</div>
 {% endfor %}
 
 {% endblock %}
