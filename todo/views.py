@@ -9,3 +9,4 @@ from django.views.generic import ListView
 class TodoListView(ListView):
     model = Todo
     context_object_name = 'todos'
+    template_name = 'todo_list.html'
