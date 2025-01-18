@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} {{todo.title}} {% endblock %}
+
+
+{% block content %}
+<h4> {{todo.title}} </h4>
+<p> {{todo.description}} </p>
+<small> {{todo.create_at|timesince}}  </small>
+
+{% endblock %}

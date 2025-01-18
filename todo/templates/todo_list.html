@@ -8,7 +8,7 @@
 
 {% for todo in todos %}
 <div>
-    <a href="" style="text-decoration: none;"> 
+    <a href="{% url 'todo-detial' todo.id %}" style="text-decoration: none;"> 
         <h3> {{todo.title}}</h3> 
         
     </a>
