@@ -13,7 +13,7 @@
         
     </a>
     <small> {{todo.status}} </small><hr>
-    <a href="" style="margin-right: 2rem;"> Delete This todo </a>
+    <a href="{% url 'todo-delete' todo.id %}" style="margin-right: 2rem;"> Delete This todo </a>
     <a href="{% url 'todo-update' todo.id %}"> Edit This todo </a> <hr> <br> <br>
 </div>
 {% endfor %}

@@ -30,3 +30,9 @@ class TodoUpdate(UpdateView):
     form_class = TodoForm
     template_name = 'todo_create.html'
     success_url = '/'
+
+
+class TodoDelete(DeleteView):
+    model = Todo
+    template_name = 'todo_confirm_delete.html'
+    success_url = '/'
